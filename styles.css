@@ -1,0 +1,38 @@
+body {
+  font-family: "Outfit", sans-serif;
+  color: #7289da;
+  background-color: #1e2124;
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+.centered-element {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 100%;
+}
+.name {
+  font-size: 10vw;
+  color: white;
+  line-height: 0;
+}
+.title {
+  font-size: 6vw;
+  line-height: 1;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.icon {
+  font-size: 7vw;
+  color: #424549;
+}
