@@ -126,6 +126,7 @@ body {
 
 .timbox {
   width: 160px;
+  margin-bottom: -24px;
 }
 
 .srax {
@@ -138,7 +139,20 @@ body {
   padding-bottom: 16px;
 }
 
+.gametime {
+  width: 160px;
+  padding-bottom: 16px;
+}
+
 .time {
   padding-top: 16px;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.company {
+}
+
+.experience-description {
+  padding-bottom: 24px;
 }
