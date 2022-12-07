@@ -1,33 +1,47 @@
 import "./App.css";
-import profile from "./jesuszvl.jpg";
 import ieebc from "./ieebc.png";
 import timbox from "./timbox.png";
 import srax from "./srax.png";
 import iconos from "./iconos.png";
 import gametime from "./gametime.png";
+import Profile from "./components/Profile/Profile";
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+
+const EXPERIENCE = [
+  {
+    name: "gametime",
+    logo: gametime,
+    time: "Mar 2022 - Present",
+    url: "https://gametime.co/",
+  },
+  {
+    name: "ieebc",
+    logo: ieebc,
+    time: "Nov 2019 - Mar 2022",
+    url: "https://ieebc.mx/",
+  },
+  {
+    name: "timbox",
+    logo: timbox,
+    time: "Feb 2018 - Dec 2018",
+    url: "https://timbox.com.mx/",
+  },
+  {
+    name: "srax",
+    logo: srax,
+    time: "Oct 2016 - Feb 2018",
+    url: "https://srax.mx/",
+  },
+  {
+    name: "iconos",
+    logo: iconos,
+    time: "Dec 2010 - Sep 2016",
+    url: "https://iconos.mx/",
+  },
+];
 
 const App = () => {
-  const renderHeader = () => {
-    return (
-      <div class="header">
-        <img class="photo" src={profile} alt="Jesús Zavala" />
-        <h1 class="name">Jesús Zavala</h1>
-        <p class="title">Software Engineer</p>
-        <div class="social">
-          <a class="link" href="https://github.com/jesuszvl">
-            <i class="bi bi-github icon"></i>
-          </a>
-          <a class="link" href="https://www.linkedin.com/in/jesuszvl/">
-            <i class="bi bi-linkedin icon"></i>
-          </a>
-          <a class="link" href="https://twitter.com/jesuszvI">
-            <i class="bi bi-twitter icon"></i>
-          </a>
-        </div>
-      </div>
-    );
-  };
-
   const renderSummary = () => {
     return (
       <div class="section">
@@ -56,36 +70,17 @@ const App = () => {
             <p class="experience-description">
               Quick summary of places I contributed delivering high quality code
             </p>
-            <div class="company">
-              <a target="_blank" href="https://gametime.co/" rel="noreferrer">
-                <img class="gametime" src={gametime} alt="Gametime" />
-              </a>
-              <span class="time">Mar 2022 - Present</span>
-            </div>
-            <div class="company">
-              <a target="_blank" href="https://ieebc.mx/" rel="noreferrer">
-                <img class="ieebc" src={ieebc} alt="IEEBC" />
-              </a>
-              <span class="time">Nov 2019 - Mar 2022</span>
-            </div>
-            <div class="company">
-              <a target="_blank" href="https://timbox.com.mx/" rel="noreferrer">
-                <img class="timbox" src={timbox} alt="Timbox" />
-              </a>
-              <span class="time">Feb 2018 - Dec 2018</span>
-            </div>
-            <div class="company">
-              <a target="_blank" href="https://srax.mx/" rel="noreferrer">
-                <img class="srax" src={srax} alt="SRAX" />
-              </a>
-              <span class="time">Oct 2016 - Feb 2018</span>
-            </div>
-            <div class="company">
-              <a target="_blank" href="https://iconos.mx/" rel="noreferrer">
-                <img class="iconos" src={iconos} alt="Iconos" />
-              </a>
-              <span class="time">Dec 2010 - Sep 2016</span>
-            </div>
+            {EXPERIENCE.map((company) => {
+              const { name, logo, url, time } = company;
+              return (
+                <div class="company">
+                  <a target="_blank" href={url} rel="noreferrer">
+                    <img class={name} src={logo} alt={name} />
+                  </a>
+                  <span class="time">{time}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -94,7 +89,9 @@ const App = () => {
 
   return (
     <div class="container">
-      {renderHeader()}
+      <Profile />
+      <About />
+      <Experience />
       {renderSummary()}
       {renderExperience()}
     </div>
