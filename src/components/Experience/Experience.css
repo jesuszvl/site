@@ -1,0 +1,19 @@
+.experience-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 24px;
+  color: black;
+}
+
+.experience {
+  max-width: 700px;
+  margin-bottom: 16px;
+}
+
+p {
+  padding-bottom: 24px;
+}
