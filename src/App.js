@@ -42,25 +42,6 @@ const EXPERIENCE = [
 ];
 
 const App = () => {
-  const renderSummary = () => {
-    return (
-      <div class="section">
-        <div class="summary-container">
-          <div class="summary">
-            <h1 class="summary-header">About me</h1>
-            <p>Hello! 👋🏼 I'm Jesús. </p>
-            <p>
-              I've been working for 11+ years in the web development industry,
-              currently focusing on creating Frontend applications with React
-              and Javascript but also used to work with other languages like
-              Python, Ruby and PHP.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   const renderExperience = () => {
     return (
       <div class="section">
@@ -92,7 +73,6 @@ const App = () => {
       <Profile />
       <About />
       <Experience />
-      {renderSummary()}
       {renderExperience()}
     </div>
   );

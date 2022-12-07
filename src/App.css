@@ -22,30 +22,6 @@ body {
   max-height: 500px;
   height: 100vh;
 }
-
-.summary-container {
-  background-color: #7289da;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 18px;
-}
-.summary {
-  color: white;
-  font-size: 18px;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.summary-header {
-}
-
 .section {
   width: 100%;
   display: flex;
@@ -121,4 +97,8 @@ body {
 
 .experience-description {
   padding-bottom: 24px;
+}
+
+p {
+  font-size: 18px;
 }
