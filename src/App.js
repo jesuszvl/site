@@ -30,7 +30,8 @@ const App = () => {
           <h1 class="summary-header">About me</h1>
           <p>
             I've been working for 11+ years in the web development industry,
-            currently focusing on creating Frontend applications with React
+            currently focusing on creating Frontend applications with React and
+            Javascript
           </p>
         </div>
       </div>
