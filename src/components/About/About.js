@@ -7,12 +7,16 @@ const About = () => {
         <h1>About me</h1>
         <p>Hello! 👋🏼 I'm Jesús. </p>
         <p>
-          I've been working for 11+ years in the web development industry,
-          currently focusing on creating Frontend applications with
+          I'm a Software Engineer from <strong>Mexicali, México</strong>{" "}
+          currently focusing on creating frontend web applications with
           <strong> React</strong> and
-          <strong> Javascript </strong> but also used to work with other
-          languages like
-          <strong> Python, Ruby and PHP </strong>.
+          <strong> Javascript </strong>.
+        </p>
+        <p>
+          On my 11+ years being part of the software development industry I also
+          had the chance to work as a fullstack engineer with other languages
+          like
+          <strong> Python, Ruby and PHP</strong>.
         </p>
       </div>
     </div>
