@@ -22,7 +22,7 @@
 
 .title {
   font-size: 30px;
-  color: #7289da;
+  color: #0e67c5;
   line-height: 1;
   padding-bottom: 16px;
   margin: 0px;
@@ -41,5 +41,5 @@
 }
 
 .icon:hover {
-  color: #36393e;
+  color: white;
 }
